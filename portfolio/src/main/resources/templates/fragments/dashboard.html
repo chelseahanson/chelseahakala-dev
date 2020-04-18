@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:fragment="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/images/Brand/favicon.ico}" />
+    <link rel="stylesheet" th:href="@{http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css}" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}" />
+</head>
+<body>
+    <div id="sidebar-wrapper" th:fragment="sidebar">
+        <div id="logo">
+            <img th:src="@{/images/Brand/logo.png}" alt="Logo" />
+        </div>
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}"><i class="material-icons">dashboard</i>  Dashboard</a>
+            <a th:href="@{/analytics}"><i class="material-icons">trending_up</i>  Analytics</a>
+            <a th:href="@{/todo}"><i class="material-icons">list</i>  To-Do List</a>
+            <a th:href="@{/calendar}"><i class="material-icons">event</i>  Calendar</a>
+            <a th:href="@{/gallery}"><i class="material-icons">photo_library</i>  Gallery</a>
+            <a th:href="@{/tables}"><i class="material-icons">table_chart</i>  Tables</a>
+            <a th:href="@{/projects}"><i class="material-icons">view_module</i>  Projects</a>
+            <a th:href="@{/users}"><i class="material-icons">people</i>  Users</a>
+            <a th:href="@{/settings}"><i class="material-icons">settings</i>  Settings</a>
+        </nav>
+    </div>
+
+    <div th:fragment="footer">
+        <footer>
+            <p>&copy; 2020 Chelsea Hakala</p>
+        </footer>
+        <!-- Menu toggle script
+        <script>
+            $("#menu-toggle").click( function (e){
+                e.preventDefault();
+                $("#wrapper").toggleClass("menuDisplayed");
+            });
+        </script>
+        -->
+
+        <script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+ 
+    </div>
+
+    <div th:fragment="welcome-notes">
+        <div>
+            <h1>Welcome!</h1>
+            <p>This is the admin/maint home page. Eventually it will be filled out more with notes and stuff.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -23,8 +23,18 @@ public class ProjectController{
 
     @GetMapping("/")
     public String main(Model model) {
+        return "dashboard";
+    }
+
+    @GetMapping("/dashboard")
+    public String dashboard(Model model) {
+        return "dashboard";
+    }
+
+    @GetMapping("/newproject")
+    public String newproject(Model model) {
         model.addAttribute("project", new FormCommand());
-        return "index";
+        return "newproject";
     }
 
     @PostMapping("/result")

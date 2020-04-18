@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+    <!--/*/ <th:block th:include="fragments/dashboard :: head"></th:block> /*/-->
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <!--/*/ <th:block th:include="fragments/dashboard :: sidebar"></th:block> /*/-->
+        </div>
+        <div id="page-content-wrapper">
+            <div id="fragment-title">
+                <header>
+                    <h1>Error</h1>
+                </header>
+            </div>
+            <div>
+                <p>Sorry I failed you.</p>
+
+                <a th:href="@{/dashboard}">Return to Dashboard</a>
+
+            </div>
+
+
+            <div id="footer">
+                <!--/*/ <th:block th:include="fragments/dashboard :: footer"></th:block> /*/-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

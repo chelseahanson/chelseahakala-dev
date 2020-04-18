@@ -1,0 +1,124 @@
+/* Color Variables */
+:root {
+    --white: #fff;
+    --brand-base: #35383f;
+    --brand-dark: #3a3b36;
+    --brand-light: #f6f6f6;
+    --brand-primary: #d33100;
+    --brand-secondary: #003c41;
+    --brand-blue-dark: #25272c;
+}
+html {
+    height: 100%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer, header {
+    background: var(--brand-dark);
+    color: var(--brand-light);
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+
+#page-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+#fragment-title {
+    flex-shrink: 0;
+}
+
+#fragment-content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: 0px;
+}
+
+/* Logo */
+#logo {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: var(--brand-dark);
+    opacity: 0.9;
+}
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+#fragment-content {
+    padding: 15px;
+}
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+/* Since we added left padding, we need to shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    display: block;
+}
+
+.sidebar-nav div {
+    width: 200px;
+    height: auto;
+}
+
+.sidebar-nav a {
+    line-height: 40px;
+    font-size: larger;
+    text-decoration: none;
+    color: var(--brand-light);
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+.sidebar-nav a:hover {
+    background: var(--brand-primary);
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

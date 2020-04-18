@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Portfolio Dashboard</title>
+    <!--/*/ <th:block th:include="fragments/dashboard :: head"></th:block> /*/-->
+</head>
+<body>
+    
+    <div id="wrapper" class="menuDisplayed">
+        <div id="sidebar-wrapper">
+            <!--/*/ <th:block th:include="fragments/dashboard :: sidebar"></th:block> /*/-->
+        </div>
+        <div id="page-content-wrapper">
+            <div id="fragment-title">
+                <header>
+                    <h1>chelseahakala.dev Dashboard</h1>
+                </header>
+            </div>
+            <div id="fragment-content">
+                <!--/*/ <th:block th:include="fragments/dashboard :: welcome-notes"></th:block> /*/-->
+            </div>
+
+
+            <div id="footer">
+                <!--/*/ <th:block th:include="fragments/dashboard :: footer"></th:block> /*/-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
